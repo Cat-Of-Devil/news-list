@@ -1,8 +1,10 @@
 {
-	"messeges": [{
-		"id": 1,
-		"author": "John Doe",
-		"text": "",
-		"created": 123456789
-	}]
+  "messages": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "text": "Lorem ipsum..",
+      "created": 123456789
+    }
+  ]
 }
