@@ -11,7 +11,8 @@ https://devcenter.heroku.com/start
 Run server:
 json-server --watch db.json --static ./
 
-
+or 
+node server.js
 
 
 
