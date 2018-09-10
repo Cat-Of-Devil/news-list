@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "json-server --port $PORT --watch db.json --static ./"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
