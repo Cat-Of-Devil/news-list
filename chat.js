@@ -2,6 +2,7 @@
 ;(function () {
 	
 	var messages = [];
+	var userName = prompt("Введите свое имя:");
 
 	//var baseUrl = "http://localhost:3000/messages";
 	var baseUrl = "https://simple-chat-92389.herokuapp.com/messages";
@@ -63,7 +64,10 @@
 
 			var el = document.createElement('div');
 			el.classList.add('message');
-			el.innerHTML = messages[i].text;
+			el.innerHTML = [
+				'<strong>' + messages[i].author + ':</strong> ',
+				'<span>' + messages[i].text + '</span>',
+			].join(' ');
 			el.appendChild(btnDel);
 
 			messageList.appendChild(el);
@@ -94,7 +98,7 @@
 
 		var message = JSON.stringify({
 			text: input.value,
-			author: "Roman Masyagin",
+			author: userName,
 			created: (new Date()).getTime()
 		});
 
