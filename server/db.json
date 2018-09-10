@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "text": "This is my best message!!!",
+      "created": 123456789
+    },
+    {
+      "id": 2,
+      "author": "Ololo",
+      "text": "aaaaaaaaaaaaaaaa!!!",
+      "created": 123456789
+    }
+  ]
+}
