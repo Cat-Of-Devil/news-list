@@ -5,14 +5,16 @@
 	var newsView = document.getElementById('news-view');
 	var newsPager = document.getElementById('news-pager');
 	var newsCounter = document.getElementById('news-counter');
+	var searchForm = document.getElementById('search-form');
 	
 	var news = [];
 
 	var totalCount = 0;
 	var currentPage = 1;
 	var itemsPerPage = 8; // 8 записей на страницу
-
-	var baseUrl = "/articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
+	var searchQuery = ''; // поисковый запрос
+	
+	var baseUrl = "/articles?";
 
 	var annonceTmpl = [
 		'<div class="col-md-3 mb-4">',
@@ -47,7 +49,16 @@
 	}
 
 	function fetchNews() {
-		api.get(baseUrl, function(items, headers){
+		url = '';
+
+		if (searchQuery) {
+			url = '&q=' + searchQuery;
+		}
+		if (itemsPerPage) {
+			url = "&_page=" + currentPage + "&_limit=" + itemsPerPage;
+		}
+			
+		api.get(baseUrl + url, function(items, headers){
 			news = items;
 			showNews();
 			updatePagination(headers);
@@ -63,6 +74,7 @@
 
 		headers['link'].split(',').map(function(link){
 			var matches = link.match(/<(.*)>; rel=\"(.*)\"/);
+
 			return pagination[matches[2]] = matches[1].replace('http://','//');
 		});
 
@@ -89,6 +101,13 @@
 	function updateCounter(headers) {
 		totalCount = +headers['x-total-count'];
 		newsCounter.innerHTML = news.length + ' из ' + totalCount;
+	}
+
+	searchForm.onsubmit = function(){
+		currentPage = 1;
+		searchQuery = this.getElementsByTagName('input')[0].value;
+		fetchNews();
+		return false;
 	}
 
 	fetchNews();
