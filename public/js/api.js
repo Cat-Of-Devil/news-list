@@ -33,6 +33,7 @@ var api = {
 
         xhr.open(method, url, true);
         xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+        xhr.withCredentials = true;
         xhr.send(data||'');
     },
     get: function(url, cb) {
