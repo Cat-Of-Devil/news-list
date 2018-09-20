@@ -10,14 +10,16 @@
 	var newsView = document.getElementById('news-view');
 
 	var annonceTmpl = [
-		'<article class="card col-md-3 m-t-15">',
-			'<img class="card-img-top" src="{{urlToImage}}"/>',
-			'<div class="card-body">',
-				'<h6 class="card-title">{{title}}</h6>',
-				'<div class="card-text">{{description}}</div>',
-				//'<div class="card-text">{{author}}</div>',
-			'</div>',
-		'</article>',
+		'<div class="col-md-3 mb-4">',
+			'<article class="card">',
+				'<img class="card-img-top" src="{{urlToImage}}"/>',
+				'<div class="card-body">',
+					'<h6 class="card-title">{{title}}</h6>',
+					'<div class="card-text">{{description}}</div>',
+					//'<div class="card-text">{{author}}</div>',
+				'</div>',
+			'</article>',
+		'</div>',
 	].join(' ');
 
 	function showNews () {
@@ -32,7 +34,7 @@
 			}
 
 			for(var fieldName in news[i]) {
-				annonce = annonce.replace('{{'+fieldName+'}}', news[i][fieldName]);
+				annonce = annonce.replace('{{'+fieldName+'}}', news[i][fieldName] || "");
 			}
 
 			newsList.insertAdjacentHTML('beforeend', annonce);

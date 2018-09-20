@@ -16,4 +16,7 @@ node server.js
 
 
 
-
+deploy on Heroku cloud:
+1) install heroku tools
+2) heroku create
+3) git push heroku master
