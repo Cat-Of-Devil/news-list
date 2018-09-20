@@ -64,7 +64,7 @@
 
 		headers['link'].split(',').map(function(link){
 			var matches = link.match(/<(.*)>; rel=\"(.*)\"/);
-			return pagination[matches[2]] = matches[1];
+			return pagination[matches[2]] = matches[1].replace('http://','https://');
 		});
 
 		for (var rel in pagination) {
