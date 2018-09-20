@@ -3,12 +3,16 @@
 	
 	var news = [];
 
-	var baseUrl = "/articles";
-	//var baseUrl = "http://localhost:3000/articles";
-	//var baseUrl = "https://afternoon-coast-76005.herokuapp.com/";
+	var totalCount = 0;
+	var currentPage = 1;
+	var itemsPerPage = 8; // 8 записей на страницу
+
+	var baseUrl = "/articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
 	
 	var newsList = document.getElementById('news-list');
 	var newsView = document.getElementById('news-view');
+	var newsPager = document.getElementById('news-pager');
+	var newsCounter = document.getElementById('news-counter');
 
 	var annonceTmpl = [
 		'<div class="col-md-3 mb-4">',
@@ -42,12 +46,49 @@
 		}
 	}
 
-	function fetchNews(cb) {
-		api.get(baseUrl, function(items){
+	function fetchNews() {
+		api.get(baseUrl, function(items, headers){
 			news = items;
 			showNews();
-			cb && cb();
+			updatePagination(headers);
+			updateCounter(headers)
 		})
+	}
+
+	function updatePagination(headers) {
+
+		newsPager.innerHTML = '';
+
+		var pagination = {};
+
+		headers['link'].split(',').map(function(link){
+			var matches = link.match(/<(.*)>; rel=\"(.*)\"/);
+			return pagination[matches[2]] = matches[1];
+		});
+
+		for (var rel in pagination) {
+			var li = document.createElement('li');
+			li.classList.add('page-item');
+
+			var a = document.createElement('a');
+			a.classList.add('page-link');
+			a.href = pagination[rel];
+			a.innerHTML = rel;
+
+			a.onclick = function(){
+				baseUrl = this.href;
+				fetchNews();
+				return false;
+			}
+
+			li.appendChild(a);
+			newsPager.appendChild(li);
+		}
+	}
+
+	function updateCounter(headers) {
+		totalCount = +headers['x-total-count'];
+		newsCounter.innerHTML = news.length + ' из ' + totalCount;
 	}
 
 	fetchNews();

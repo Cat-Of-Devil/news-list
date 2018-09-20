@@ -8,7 +8,25 @@ var api = {
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && [200,201].indexOf(this.status) != -1) {
                 if (this.responseText) {
-                    callback(JSON.parse(this.responseText));
+
+                    // // Get the raw header string
+                    var headers = xhr.getAllResponseHeaders();
+
+                    // Convert the header string into an array
+                    // of individual headers
+                    var arr = headers.trim().split(/[\r\n]+/);
+
+                    // Create a map of header names to values
+                    var headerMap = {};
+                    arr.forEach(function (line) {
+                        var parts = line.split(': ');
+                        var header = parts.shift();
+                        var value = parts.join(': ');
+                        headerMap[header] = value;
+                    });
+
+                    // returns result
+                    callback(JSON.parse(this.responseText), headerMap);
                 }
             }
         };
