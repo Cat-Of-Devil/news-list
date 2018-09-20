@@ -1,18 +1,19 @@
 
 ;(function () {
 	
+	var newsList = document.getElementById('news-list');
+	var newsView = document.getElementById('news-view');
+	var newsPager = document.getElementById('news-pager');
+	var newsCounter = document.getElementById('news-counter');
+	
 	var news = [];
 
 	var totalCount = 0;
 	var currentPage = 1;
 	var itemsPerPage = 8; // 8 записей на страницу
 
-	var baseUrl = "articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
-	
-	var newsList = document.getElementById('news-list');
-	var newsView = document.getElementById('news-view');
-	var newsPager = document.getElementById('news-pager');
-	var newsCounter = document.getElementById('news-counter');
+	var baseUrl = "https://afternoon-coast-76005.herokuapp.com/articles";
+	baseUrl += "?_page=" + currentPage + "&_limit=" + itemsPerPage;
 
 	var annonceTmpl = [
 		'<div class="col-md-3 mb-4">',
