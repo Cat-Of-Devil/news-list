@@ -12,8 +12,7 @@
 	var currentPage = 1;
 	var itemsPerPage = 8; // 8 записей на страницу
 
-	var baseUrl = "https://afternoon-coast-76005.herokuapp.com/articles";
-	baseUrl += "?_page=" + currentPage + "&_limit=" + itemsPerPage;
+	var baseUrl = "/articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
 
 	var annonceTmpl = [
 		'<div class="col-md-3 mb-4">',
@@ -64,7 +63,7 @@
 
 		headers['link'].split(',').map(function(link){
 			var matches = link.match(/<(.*)>; rel=\"(.*)\"/);
-			return pagination[matches[2]] = matches[1].replace('http://','https://');
+			return pagination[matches[2]] = matches[1].replace('http://','//');
 		});
 
 		for (var rel in pagination) {
