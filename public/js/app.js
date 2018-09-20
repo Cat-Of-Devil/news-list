@@ -3,8 +3,9 @@
 	
 	var news = [];
 
-	var baseUrl = "http://localhost:3000/articles";
-	//var baseUrl = "https://simple-chat-92389.herokuapp.com/articles";
+	var baseUrl = "/articles";
+	//var baseUrl = "http://localhost:3000/articles";
+	//var baseUrl = "https://afternoon-coast-76005.herokuapp.com/";
 	
 	var newsList = document.getElementById('news-list');
 	var newsView = document.getElementById('news-view');
