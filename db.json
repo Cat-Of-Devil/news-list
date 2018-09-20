@@ -1,10 +1,284 @@
 {
-  "messages": [
+  "articles": [
     {
-      "id": 1,
-      "author": "John Doe",
-      "text": "Lorem ipsum..",
-      "created": 123456789
+      "id":1,
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": null,
+      "title": "Grassley says Monday's hearing will be limited to two witnesses: Kavanaugh and his accuser",
+      "description": "The chairman of the Judiciary Committee said during a radio interview that Christine Blasey Ford, who accused the judge of a decades-old assault, has not responded.",
+      "url": "https://www.washingtonpost.com/politics/grassley-says-mondays-hearing-will-be-limited-to-two-witnesses-kavanaugh-and-his-accuser/2018/09/18/301da074-bb48-11e8-a8aa-860695e7f3fc_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/49s99ZoV0fymvbT8ObGXUcLTlvU=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/O5AIKXV3JMI6RKFKQYDJLZ7T7Q.jpg",
+      "publishedAt": "2018-09-18T16:38:05Z",
+      "content": "Senate Judiciary Committee Chairman Charles E. Grassley (R-Iowa) said Tuesday that next week’s hearing regarding accusations of sexual assault by Judge Brett M. Kavanaugh will be limited to two witnesses: the Supreme Court nominee and his accuser. The narrow … [+6093 chars]"
+    },
+    {
+      "id":2,
+      "source": {
+        "id": null,
+        "name": "Theatlantic.com"
+      },
+      "author": "Priscilla Alvarez",
+      "title": "The US Relinquishes Its Role as a Leader in Refugee Resettlement",
+      "description": "By dramatically reducing the admission cap for the upcoming fiscal year, the administration seems to be abandoning the country’s longstanding commitment to help those fleeing war and persecution.",
+      "url": "https://www.theatlantic.com/politics/archive/2018/09/refugee-admissions-trump/570535/",
+      "urlToImage": "https://cdn.theatlantic.com/assets/media/img/mt/2018/09/AP_18260785620465/facebook.jpg?1537281237",
+      "publishedAt": "2018-09-18T16:11:49Z",
+      "content": null
+    },
+    {
+      "id":3,
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Antonio Villas-Boas",
+      "title": "iPhone XS reviews are starting to come in, and there's not a lot of complaining",
+      "description": "But wait, there's still one more iPhone that needs to be reviewed before you click the \"Buy\" button.",
+      "url": "https://www.businessinsider.com/iphone-xs-round-up-for-the-first-reviews-2018-9",
+      "urlToImage": "https://amp.businessinsider.com/images/5ba1141d5c5e521a768b578f-2732-1366.jpg",
+      "publishedAt": "2018-09-18T15:54:28Z",
+      "content": "The first wave of reviews of Apple's latest iPhone XS and XS Max are in, and they're widely favorable. Of note, it seems the major improvement can be found in the camera, especially with portrait mode and the new Smart HDR feature that Apple introduced during… [+741 chars]"
+    },
+    {
+      "id":4,
+      "source": {
+        "id": null,
+        "name": "Espn.com"
+      },
+      "author": null,
+      "title": "Man charged with first-degree murder in death of Iowa State golfer Celia Barquin Arozamena",
+      "description": "Former Iowa State golfer Celia Barquin Arozamena, 22, was found dead at an Ames golf course and a suspect has been charged with first-degree murder.",
+      "url": "http://www.espn.com/college-sports/story/_/id/24717884/man-charged-first-degree-murder-death-iowa-state-golfer-celia-barquin-arozamena",
+      "urlToImage": "http://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0917%2Fr432918_1296x729_16%2D9.jpg",
+      "publishedAt": "2018-09-18T15:49:42Z",
+      "content": "A 22-year-old man has been charged with first-degree murder in the death of Iowa State golfer Celia Barquin Arozamena, the 2018 Big 12 champion and the school's female athlete of the year. Barquin Arozamena, 22, was found dead Monday at a golf course in Ames,… [+4085 chars]"
+    },
+    {
+      "id":5,
+      "source": {
+        "id": null,
+        "name": "Cbssports.com"
+      },
+      "author": "",
+      "title": "After strange 'trade me' tweet, Antonio Brown reportedly didn't show up to work on Monday",
+      "description": "Brown was seen arguing with the team's offensive coordinator during Sunday's game",
+      "url": "https://www.cbssports.com/nfl/news/after-strange-trade-me-tweet-antonio-brown-reportedly-didnt-show-up-to-work-on-monday/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2018/09/17/6ca93239-c98d-40de-bdbc-2b29bd096bd3/thumbnail/770x433/da219c04c4f3a1e3bbd1dda4a074c77a/antonio-brown-steelers-drama-fichtner-sideline.png",
+      "publishedAt": "2018-09-18T15:49:00Z",
+      "content": "Things are getting very, very weird in Pittsburgh. Already waiting for star running back Le'Veon Bell to report to the team while he holds out due to frustration with being franchise-tagged for the second straight season, the Steelers reportedly had another s… [+2297 chars]"
+    },
+    {
+      "id":6,
+      "source": {
+        "id": "the-guardian-au",
+        "name": "The Guardian (AU)"
+      },
+      "author": "Tom McCarthy",
+      "title": "Stormy Daniels: 'Little girl from Baton Rouge' posing big problem for Trump",
+      "description": "A $130,000 payment in 2016 bought the porn star’s silence about an alleged affair but now spells trouble for the president",
+      "url": "https://www.theguardian.com/us-news/2018/sep/18/stormy-daniels-donald-trump-profile",
+      "urlToImage": "https://i.guim.co.uk/img/media/b5c7f67db8d02a618e9694075902c473191f48e2/0_265_5080_3048/master/5080.jpg?width=1200&height=630&quality=85&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=ced7a071c84874f8ada0e399771a6cd5",
+      "publishedAt": "2018-09-18T15:45:57Z",
+      "content": "T wo years after Donald Trump’s inauguration, the Wall Street Journal reported that his personal lawyer, Michael Cohen, had arranged a hush payment of $130,000 to a pornographic film actor named Stormy Daniels. At the time, the significance of the Daniels pay… [+3605 chars]"
+    },
+    {
+      "id":7,
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": null,
+      "title": "Putin blames downing of Russian plane in Syria on 'tragic chance events,' rejects Israeli culpability",
+      "description": "An Israeli strike triggered a Syrian response in which a Russian surveillance plane in the area was hit.",
+      "url": "https://www.washingtonpost.com/world/middle_east/russia-blames-israel-after-its-reconnaissance-plane-downed-by-syrian-air-defense/2018/09/18/5d676634-bb19-11e8-b1c5-7a2126bc722c_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/PtL06ZUKN7gJca7sCZ9w-u_ul-k=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/ULLYLUF3LQI6RGASUOE34ZUQV4.jpg",
+      "publishedAt": "2018-09-18T15:45:00Z",
+      "content": "BEIRUT — Russian President Vladimir Putin on Tuesday described the downing of a Russian plane in Syria as the result of “tragic chance events,” appearing to dial back a rare flare-up in tensions with Israel. Fifteen Russian service personnel were killed late … [+5107 chars]"
+    },
+    {
+      "id":8,
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Sophie Tatum, Kate Sullivan and Laura Jarrett, CNN",
+      "title": "Trump inflames war on Justice Dept. by declassifying Russia docs",
+      "description": "President Donald Trump on Monday ordered the declassification of various documents and text messages related to the Russia investigation, prompting new concerns about the increasing politicization of intelligence materials.",
+      "url": "https://www.cnn.com/2018/09/17/politics/donald-trump-declassify-documents/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/180917152041-trump-kavanaugh-remarks-super-tease.jpg",
+      "publishedAt": "2018-09-18T15:21:59Z",
+      "content": "Washington (CNN) President Donald Trump on Monday ordered the declassification of various documents and text messages related to the Russia investigation, prompting new concerns about the increasing politicization of intelligence materials. \"For reasons of tr… [+6268 chars]"
+    },
+    {
+      "id":9,
+      "source": {
+        "id": null,
+        "name": "Wral.com"
+      },
+      "author": null,
+      "title": "Latest: Florence continues to torment NC with flooding, power outages",
+      "description": null,
+      "url": "https://www.wral.com/latest-cresting-timeline-shifts-for-cape-fear-river/17852250/",
+      "urlToImage": null,
+      "publishedAt": "2018-09-18T15:20:47Z",
+      "content": null
+    },
+    {
+      "id":10,
+      "source": {
+        "id": "cnbc",
+        "name": "CNBC"
+      },
+      "author": "Berkeley Lovelace Jr.",
+      "title": "Cramer: Trump's new China tariffs signal the 'game is over' to Apple and other US companies",
+      "description": "President Donald Trump has made it clear that U.S. companies who do business with China will be impacted, CNBC's Jim Cramer says.",
+      "url": "https://www.cnbc.com/2018/09/18/cramer-trump-not-sensitive-to-us-companies-harmed-by-china-tariffs.html",
+      "urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/15/105399288-1534367196624gettyimages-1010347438.1910x1000.jpeg",
+      "publishedAt": "2018-09-18T15:04:58Z",
+      "content": "President Donald Trump has made it very clear that U.S. companies who do business with China will be impacted by his tariffs, CNBC's Jim Cramer said Tuesday. div &gt; div.group &gt; p:first-child\"&gt; \"I think the president is saying, 'Hey, listen guys, you a… [+1188 chars]"
+    },
+    {
+      "id":11,
+      "source": {
+        "id": null,
+        "name": "Dailyherald.com"
+      },
+      "author": "Associated Press",
+      "title": "Jury shown shooting video repeatedly at Chicago cop's trial",
+      "description": "The last moments of Laquan McDonald's life played over and over again for the jury. An officer pulls up, gets out of a squad car and opens fire as the black teenager walks away from police, a small knife in one hand. McDonald crumples to the ground. More bull…",
+      "url": "https://www.dailyherald.com/news/20180918/jury-shown-shooting-video-repeatedly-at-chicago-cops-trial",
+      "urlToImage": "https://www.dailyherald.com/storyimage/DA/20180918/NEWS/180919003/AR/0/AR-180919003.jpg&updated=201809180948&imageversion=Facebook&exactH=630&exactW=1200&exactfit=crop&noborder",
+      "publishedAt": "2018-09-18T14:53:15Z",
+      "content": "CHICAGO (AP) -- The last moments of Laquan McDonald's life played over and over again for the jury. An officer pulls up, gets out of a squad car and opens fire as the black teenager walks away from police, a small knife in one hand. McDonald crumples to the g… [+4249 chars]"
+    },
+    {
+      "id":12,
+      "source": {
+        "id": null,
+        "name": "Nypost.com"
+      },
+      "author": null,
+      "title": "Train shaver explains why he needed to groom himself during evening commute",
+      "description": null,
+      "url": "https://nypost.com/2018/09/18/train-shaver-explains-why-he-needed-to-groom-himself-during-evening-commute/",
+      "urlToImage": null,
+      "publishedAt": "2018-09-18T14:49:54Z",
+      "content": null
+    },
+    {
+      "id":13,
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Kalhan Rosenblatt",
+      "title": "Day care worker arrested for putting children in closets with ligatures around their necks",
+      "description": "Day care worker Rebecca Anderson, 60, was arrested after police discovered several children left in car seats inside a dark closet with ligatures tied around their necks.",
+      "url": "https://www.nbcnews.com/news/us-news/day-care-worker-arrested-putting-children-closets-ligatures-around-their-n910571",
+      "urlToImage": "https://media1.s-nbcnews.com/j/newscms/2018_38/2570361/180918-rebecca-anderson-mn-0835_b9477dbb73a2ea4aa62578ec336341ab.1200;630;7;70;5.jpg",
+      "publishedAt": "2018-09-18T14:07:00Z",
+      "content": "Get breaking news alerts and special reports. The news and stories that matter, delivered weekday mornings. SUBSCRIBE A Texas day care owner was arrested after police discovered several children strapped into plastic car seats and left in a dark closet and ba… [+2137 chars]"
+    },
+    {
+      "id":14,
+      "source": {
+        "id": "the-new-york-times",
+        "name": "The New York Times"
+      },
+      "author": null,
+      "title": "The Best and Worst Moments of the 2018 Emmys",
+      "description": "The 70th Primetime Emmy Awards were dominated by “diversity,” “Mrs. Maisel” and a surprise proposal.",
+      "url": "https://www.nytimes.com/2018/09/18/arts/television/emmys-best-worst-2018.html",
+      "urlToImage": "https://static01.nyt.com/images/2018/09/18/arts/19emmys-best-worst1/19emmys-best-worst1-facebookJumbo.jpg",
+      "publishedAt": "2018-09-18T13:57:11Z",
+      "content": "He started his speech paying tribute to his mother, who he said had passed away two weeks ago. “Mom always believed in finding the sunshine in things, and she adored my girlfriend, Jan,” Mr. Weiss said. Mr. Weiss was referring to Jan Svendsen, the chief creat… [+542 chars]"
+    },
+    {
+      "id":15,
+      "source": {
+        "id": null,
+        "name": "Npr.org"
+      },
+      "author": "",
+      "title": "German Doctors Say It's 'Highly Plausible' Pussy Riot Activist Was Poisoned",
+      "description": "Physicians in Berlin say that anti-Kremlin activist Pyotr Verzilov's illness does not appear to be caused by infection or disease. But they could not confirm what he was poisoned with, or by whom.",
+      "url": "https://www.npr.org/2018/09/18/649106615/german-doctors-say-its-highly-plausible-pussy-riot-activist-was-poisoned",
+      "urlToImage": "https://media.npr.org/assets/img/2018/09/18/gettyimages-1035321042_wide-101f20c01253f3eb6d68fc9920f692a89793e396.jpg?s=1400",
+      "publishedAt": "2018-09-18T13:56:00Z",
+      "content": "The CEO of Berlin's Charite Hospital, Karl Max Einhaeupl (left), and leading doctor Kai-Uwe Eckardt discuss the health of Pyotr Verzilov in Berlin on Tuesday. Verzilov, a member of Russian punk protest band Pussy Riot, was flown to Germany on Sept. 16 after a… [+3323 chars]"
+    },
+    {
+      "id":16,
+      "source": {
+        "id": null,
+        "name": "Espn.com"
+      },
+      "author": null,
+      "title": "Fantasy intel for all 32 NFL teams ahead of Week 3",
+      "description": "How to value Giovani Bernard, Matt Breida, Tyler Boyd and many more. Mike Clay has the info you need to make fantasy football decisions in Week 3.",
+      "url": "http://www.espn.com/fantasy/football/story/_/page/imagined180918/fantasy-football-fantasy-intel-all-32-nfl-teams-ahead-week-3-including-how-value-giovani-bernard-matt-breida-tyler-boyd",
+      "urlToImage": "http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0918%2Fr432991_1296x729_16%2D9.jpg",
+      "publishedAt": "2018-09-18T13:35:16Z",
+      "content": "The Fantasy 32 analyzes the NFL from a fantasy perspective, with at least one mention of each of the league's 32 teams. Though efficiency will be discussed plenty, the column will lean heavily on usage data, as volume is king (by far) in fantasy football. Use… [+20320 chars]"
+    },
+    {
+      "id":17,
+      "source": {
+        "id": null,
+        "name": "Cbssports.com"
+      },
+      "author": "",
+      "title": "Group of Hall of Famers wants health insurance and salary or will boycott future inductions",
+      "description": "It is unclear whether these benefits are being requested for all former NFL players or just Hall of Famers",
+      "url": "https://www.cbssports.com/nfl/news/group-of-hall-of-famers-wants-health-insurance-and-salary-or-will-boycott-future-inductions/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2018/09/18/42454cc9-3a10-4aa7-991e-f0245c2509ae/thumbnail/770x433/1e12e1ead970b0bdde567276ffe5814f/dickerson.jpg",
+      "publishedAt": "2018-09-18T13:31:00Z",
+      "content": "A group of Pro Football Hall of Famers sent a letter to NFL commissioner Roger Goodell, NFLPA executive direction DeMaurice Smith, and Pro Football Hall of Fame president David Baker, telling the trio that they want to receive health insurance coverage and an… [+2954 chars]"
+    },
+    {
+      "id":18,
+      "source": {
+        "id": null,
+        "name": "People.com"
+      },
+      "author": "Lindsay Kimble",
+      "title": "She's Here! Watch Brie Larson in the First Trailer for Captain Marvel",
+      "description": "When Captain Marvel hits theaters March 8, 2019, it'll be the 21st entry in the MCU — and the first to star a solo female superhero",
+      "url": "https://people.com/movies/captain-marvel-first-trailer-brie-larson/",
+      "urlToImage": "https://peopledotcom.files.wordpress.com/2018/09/brie-larson2.jpg?crop=0px%2C0px%2C2000px%2C1050px&resize=1200%2C630",
+      "publishedAt": "2018-09-18T13:02:00Z",
+      "content": null
+    },
+    {
+      "id":19,
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": null,
+      "title": "Maduro slammed for dining on pricey 'Salt Bae' steaks as Venezuelans starve",
+      "description": null,
+      "url": "https://www.cnn.com/2018/09/18/world/venezuela-maduro-salt-bae-steak-intl/index.html",
+      "urlToImage": null,
+      "publishedAt": "2018-09-18T10:48:57Z",
+      "content": null
+    },
+    {
+      "id":20,
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": null,
+      "title": "Thai Cave Diver Sues Elon Musk For Defamation",
+      "description": null,
+      "url": "https://www.wsj.com/articles/thai-cave-diver-sues-elon-musk-for-defamation-1537212892",
+      "urlToImage": null,
+      "publishedAt": "2018-09-17T19:34:00Z",
+      "content": null
     }
   ]
 }

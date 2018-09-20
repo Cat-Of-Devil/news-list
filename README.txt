@@ -9,7 +9,7 @@ https://devcenter.heroku.com/start
 
 
 Run server:
-json-server --watch db.json --static ./
+json-server --watch db.json --static ./public/
 
 or 
 node server.js
