@@ -7,7 +7,7 @@
 	var currentPage = 1;
 	var itemsPerPage = 8; // 8 записей на страницу
 
-	var baseUrl = "/articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
+	var baseUrl = "articles?_page=" + currentPage + "&_limit=" + itemsPerPage;
 	
 	var newsList = document.getElementById('news-list');
 	var newsView = document.getElementById('news-view');
